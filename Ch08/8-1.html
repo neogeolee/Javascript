@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8-1</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--구글 제이쿼리 삽입-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background: orange;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.box1').draggable();
+            $('.box2').draggable({
+                axis: 'y'
+            });
+            $('.box3').draggable({
+                revert : true
+            });
+            $('.city').sortable();
+
+             $('.accordion').accordion({
+                 collapsible : true
+             });
+
+            $('.tab').tabs();
+        });
+           
+    </script>
+    <style>
+        .accordion {
+            width: 500px;
+        }
+
+        .tab {
+            width: 560px;
+        }
+        .ui-widget-header {
+	    border: 1px solid #d3f525;
+	    background: #15ddec;
+	    color: #222222;
+	    font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>1.jQuery 플러그인</h3>
+
+    <h4>draggable 플러그인</h4>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    
+    <h4>sortable 플러그인</h4>
+    <ul class="city">
+        <li>서울</li>
+        <li>대전</li>
+        <li>대구</li>
+        <li>광주</li>
+        <li>부산</li>
+    </ul>
+
+    <h4>accordion 플러그인</h4>
+    <div class="accordion">
+        <h3>애국가1절</h3>
+        <div>
+            <p>
+                동해물과 백두산이 마르고 닳도록<br/>
+                하느님이 보우하사 우리나라 만세<br/>
+                무궁화 삼천리 화려강산<br/>
+                대한 사람 대한으로 길이 보전하세<br/>
+            </p>
+        </div>
+        <h3>애국가2절</h3>
+        <div>
+            <p>
+                남산 위에 저 소나무 철갑을 두른듯<br/>
+                바람서리 불변함은 우리 기상일세<br/>
+                무궁화 삼천리 화려강산<br/>
+                대한 사람 대한으로 길이 보전하세<br/>
+            </p>
+        </div>
+        <h3>애국가3절</h3>
+        <div>
+            <p>
+                가을하늘 공활한데 높고 구름없이<br/>
+                밝은 달은 우리 가슴 일편 단심일세<br/>
+                무궁화 삼천리 화려강산<br/>
+                대한 사람 대한으로 길이 보전하세<br/>
+            </p>
+        </div>
+        <h3>애국가4절</h3>
+        <div>
+            <p>
+                이기상과 이 마음으로 충성을 다하여<br/>
+                괴로우나 즐거우나 나라 사랑하세<br/>
+                무궁화 삼천리 화려강산<br/>
+                대한 사람 대한으로 길이 보전하세<br/>
+            </p>
+        </div>
+    </div>
+    
+    <h4>tab 플러그인</h4>
+    <div class="tab">
+        <ul>
+            <li><a href="#tab-1">애국가1절</a></li>
+            <li><a href="#tab-2">애국가2절</a></li>
+            <li><a href="#tab-3">애국가3절</a></li>
+            <li><a href="#tab-4">애국가4절</a></li>
+        </ul>
+        <div id="tab-1">
+            <p>
+                동해물과 백두산이 마르고 닳도록<br/>
+                하느님이 보우하사 우리나라 만세<br/>
+                무궁화 삼천리 화려강산<br/>
+                대한 사람 대한으로 길이 보전하세<br/>
+            </p>
+        </div>
+        <div id="tab-2">
+            <p>
+                남산 위에 저 소나무 철갑을 두른듯<br/>
+                바람서리 불변함은 우리 기상일세<br/>
+                무궁화 삼천리 화려강산<br/>
+                대한 사람 대한으로 길이 보전하세<br/>
+            </p>
+        </div>
+        <div id="tab-3">
+            <p>
+                가을하늘 공활한데 높고 구름없이<br/>
+                밝은 달은 우리 가슴 일편 단심일세<br/>
+                무궁화 삼천리 화려강산<br/>
+                대한 사람 대한으로 길이 보전하세<br/>
+            </p>
+        </div>
+        <div id="tab-4">
+            <p>
+                이기상과 이 마음으로 충성을 다하여<br/>
+                괴로우나 즐거우나 나라 사랑하세<br/>
+                무궁화 삼천리 화려강산<br/>
+                대한 사람 대한으로 길이 보전하세<br/>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
